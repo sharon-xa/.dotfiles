@@ -1,0 +1,49 @@
+[general]
+import = ["~/.config/alacritty/themes/monokai_charcoal.toml"]
+
+[font]
+size = 14
+
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "FiraCode Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[window]
+decorations = "Full"
+opacity = 0.9
+dynamic_padding = true
+
+[window.dimensions]
+columns = 100
+lines = 26
+
+[window.padding]
+x = 10
+y = 10
+
+[terminal]
+osc52 = "CopyPaste"
+
+[selection]
+save_to_clipboard = true
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Control"
+chars = "\u0017"
