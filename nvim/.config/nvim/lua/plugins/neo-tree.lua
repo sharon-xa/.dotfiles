@@ -5,13 +5,16 @@ return {
       filtered_items = {
         visible = true,
         show_hidden_count = true,
-        hide_dotfiles = false,
+        hide_dotfiles = true,
         hide_gitignored = true,
-        hide_by_name = {
+        never_show = {
+          ".git",
           ".DS_Store",
           "thumbs.db",
+          ".idea",
+          ".vscode",
+          ".venv",
         },
-        never_show = { ".git" },
       },
     },
   },
