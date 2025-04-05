@@ -22,6 +22,7 @@ alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow
 # run scripts
 alias update='~/scripts/update-all.sh'
 alias develop="~/scripts/budget-backend.tmux.sh"
+alias wall-change="~/scripts/change-wallpaper.i3.sh"
 
 # WiFi
 alias wifi-on="nmcli radio wifi on"
