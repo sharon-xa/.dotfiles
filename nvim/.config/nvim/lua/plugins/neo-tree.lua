@@ -5,8 +5,8 @@ return {
       filtered_items = {
         visible = true,
         show_hidden_count = true,
-        hide_dotfiles = true,
-        hide_gitignored = true,
+        hide_dotfiles = false,
+        hide_gitignored = false,
         never_show = {
           ".git",
           ".DS_Store",
