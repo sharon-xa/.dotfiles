@@ -38,3 +38,6 @@ alias signal="run-disown signal-desktop --password-store=\"kwallet6\" && exit"
 
 # apps
 alias aliases="pretty-alias"
+
+# vps
+alias cdvm="ssh -i ~/.ssh/lightsail-amazon-ubuntu-vps.pem ubuntu@3.70.69.84"
