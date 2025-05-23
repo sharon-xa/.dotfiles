@@ -14,6 +14,9 @@ set -gx EDITOR vim
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
+# pyenv
+pyenv init - fish | source
+
 # Aliases
 # ---------------------------------
 alias coverage "go test -coverprofile=coverage.out && go tool cover -html=coverage.out"
@@ -40,4 +43,4 @@ alias signal="run-disown signal-desktop --password-store=\"kwallet6\" && exit"
 alias aliases="pretty-alias"
 
 # vps
-alias cdvm="ssh -i ~/.ssh/lightsail-amazon-ubuntu-vps.pem ubuntu@3.70.69.84"
+alias cdvm="ssh -i ~/.ssh/lightsail-amazon-ubuntu-vps.pem ubuntu@3.71.154.69"
