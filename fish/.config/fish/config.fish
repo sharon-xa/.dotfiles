@@ -14,9 +14,6 @@ set -gx EDITOR vim
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
-# pyenv
-pyenv init - fish | source
-
 # Aliases
 # ---------------------------------
 alias coverage "go test -coverprofile=coverage.out && go tool cover -html=coverage.out"
