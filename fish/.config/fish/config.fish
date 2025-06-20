@@ -41,3 +41,6 @@ alias aliases="pretty-alias"
 
 # vps
 alias cdvm="ssh -i ~/.ssh/lightsail-amazon-ubuntu-vps.pem ubuntu@3.71.154.69"
+
+# Bindings
+bind \cf run_zi
