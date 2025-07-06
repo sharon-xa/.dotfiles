@@ -11,5 +11,6 @@ These are my dotfiles.
 
 ### fish
 - install omf to theme fish
+- install eza to replace ls
 
 ### 
