@@ -5,7 +5,7 @@ import = ["~/.config/alacritty/themes/gruber_darker.toml"]
 size = 14
 
 [font.normal]
-family = "Cascadia Code"
+family = "CaskaydiaCove Nerd Font"
 style = "Regular"
 
 [font.bold]
