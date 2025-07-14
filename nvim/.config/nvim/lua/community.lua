@@ -6,5 +6,7 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
+  { import = "astrocommunity.pack.cs-omnisharp" },
 }
