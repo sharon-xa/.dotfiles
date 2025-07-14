@@ -9,4 +9,5 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.pack.cs-omnisharp" },
+  { import = "astrocommunity.pack.markdown" },
 }
