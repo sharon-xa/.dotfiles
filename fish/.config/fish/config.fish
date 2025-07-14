@@ -14,6 +14,9 @@ set -gx EDITOR vim
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
+# csharp bullshit
+set -gx PATH $PATH $HOME/.dotnet/tools
+
 # Aliases
 # ---------------------------------
 alias coverage "go test -coverprofile=coverage.out && go tool cover -html=coverage.out"
