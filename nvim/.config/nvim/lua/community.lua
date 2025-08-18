@@ -10,4 +10,5 @@ return {
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.pack.cs-omnisharp" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.cpp" },
 }
