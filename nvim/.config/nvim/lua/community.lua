@@ -11,4 +11,5 @@ return {
   { import = "astrocommunity.pack.cs-omnisharp" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.bash" },
 }
