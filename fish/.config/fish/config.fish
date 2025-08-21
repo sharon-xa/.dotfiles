@@ -3,6 +3,10 @@ end
 
 set fish_greeting
 
+# PATHs
+# ---------------------------------
+set -U fish_user_paths $HOME/.local/bin $fish_user_paths
+
 # Go executables
 set -x GOPATH $HOME/go
 set -x PATH $PATH $GOPATH/bin
