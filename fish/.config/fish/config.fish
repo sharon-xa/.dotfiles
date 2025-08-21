@@ -36,10 +36,6 @@ alias wifi-on="nmcli radio wifi on"
 alias wifi-off="nmcli radio wifi off"
 alias check-wifi="nmcli radio wifi"
 
-# display brightness
-alias bright-up="brightnessctl s +800"
-alias bright-down="brightnessctl s 800-"
-
 # run signal on a different DE or WM
 alias signal="run-disown signal-desktop --password-store=\"kwallet6\" && exit"
 
