@@ -20,7 +20,7 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 # csharp bullshit
 set -x DOTNET_ROOT $HOME/.dotnet
-set -gx PATH $DOTNET_ROOT $DOTNET_ROOT/tools $PATH
+set -gx PATH $DOTNET_ROOT $DOTNET_ROOT/tools /usr/share/dotnet $PATH
 
 # Aliases
 # ---------------------------------
