@@ -220,7 +220,7 @@ bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Scr
 # startup settings
 exec --no-startup-id bash -c ~/scripts/startup-monitor-setup.sh
 exec --no-startup-id feh --bg-fill "$(find ~/Pictures/wallpapers/ -maxdepth 1 -type f | shuf -n1)"
-exec_always --no-startup-id setxkbmap -layout us,ara -option grp:alt_shift_toggle
+exec_always --no-startup-id setxkbmap -layout us,ara -option grp:win_space_toggle
 
 exec_always --no-startup-id picom
 exec_always --no-startup-id ~/.config/polybar/launch.sh --forest &
