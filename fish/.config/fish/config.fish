@@ -19,7 +19,8 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 # csharp bullshit
-set -gx PATH $PATH $HOME/.dotnet/tools
+set -x DOTNET_ROOT $HOME/.dotnet
+set -gx PATH $DOTNET_ROOT $DOTNET_ROOT/tools $PATH
 
 # Aliases
 # ---------------------------------
