@@ -22,6 +22,10 @@ set --export PATH $BUN_INSTALL/bin $PATH
 set -x DOTNET_ROOT $HOME/.dotnet
 set -gx PATH $DOTNET_ROOT $DOTNET_ROOT/tools /usr/share/dotnet $PATH
 
+# Flatpak
+set -x FLATPAK_DOWNLOAD_CONCURRENCY 5
+
+
 # Aliases
 # ---------------------------------
 alias coverage "go test -coverprofile=coverage.out && go tool cover -html=coverage.out"

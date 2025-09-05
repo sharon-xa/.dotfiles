@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SESSION_NAME="dev"
-SESSION_DIR="$HOME/Qaccess/projects/refine/budget/refine-budget-api/"  # Change this to your desired directory
+SESSION_DIR="$HOME/Qaccess/projects/refine/budget/refine-budget-api/"
 
 if [ ! -d "$SESSION_DIR" ]; then
   echo "Directory $SESSION_DIR does not exist. Exiting..."
@@ -10,10 +10,9 @@ fi
 
 cd "$SESSION_DIR" || exit
 
-tmux has-session -t $SESSION_NAME 2>/dev/null
-if [ $? -eq 0 ]; then
+if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
   echo "Session $SESSION_NAME already exists. Attaching..."
-  tmux attach-session -t $SESSION_NAME
+  tmux attach-session -t "$SESSION_NAME"
   exit 0
 fi
 
