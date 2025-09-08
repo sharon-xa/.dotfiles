@@ -5,26 +5,25 @@ set fish_greeting
 
 # PATHs
 # ---------------------------------
+# Local user bin
 set -U fish_user_paths $HOME/.local/bin $fish_user_paths
 
-# Go executables
-set -x GOPATH $HOME/go
-set -x PATH $PATH $GOPATH/bin
+# Bun
+set -U fish_user_paths $HOME/.bun/bin $fish_user_paths
+set -x BUN_INSTALL "$HOME/.bun"
 
-# Environment Variables
-set -gx EDITOR vim
+# Go
+set -U fish_user_paths $HOME/go/bin $fish_user_paths
+set -x GOPATH "$HOME/go"
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
-# csharp bullshit
-set -x DOTNET_ROOT $HOME/.dotnet
-set -gx PATH $DOTNET_ROOT $DOTNET_ROOT/tools /usr/share/dotnet $PATH
+# .NET
+set -U fish_user_paths $HOME/.dotnet $fish_user_paths
+set -U fish_user_paths $HOME/.dotnet/tools $fish_user_paths
+set -x DOTNET_ROOT "$HOME/.dotnet"
+set -U fish_user_paths /usr/share/dotnet $fish_user_paths
 
 # Flatpak
 set -x FLATPAK_DOWNLOAD_CONCURRENCY 5
-
 
 # Aliases
 # ---------------------------------
