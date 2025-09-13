@@ -17,10 +17,7 @@ set -U fish_user_paths $HOME/go/bin $fish_user_paths
 set -x GOPATH "$HOME/go"
 
 # .NET
-set -U fish_user_paths $HOME/.dotnet $fish_user_paths
 set -U fish_user_paths $HOME/.dotnet/tools $fish_user_paths
-set -x DOTNET_ROOT "$HOME/.dotnet"
-set -U fish_user_paths /usr/share/dotnet $fish_user_paths
 
 # Flatpak
 set -x FLATPAK_DOWNLOAD_CONCURRENCY 5
