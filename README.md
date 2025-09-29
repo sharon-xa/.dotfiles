@@ -106,7 +106,7 @@ These are my dotfiles.
 - **fastfetch**: Like Neofetch, but much faster because written in C.
 - **tlp (for laptops)**: Linux Advanced Power Management.
 - **tree**: A directory listing program displaying a depth indented list of files.
-- **tldr**: Command line client for tldr, a collection of simplified man pages.
+- **tealdeer**: Command line client for tldr, a collection of simplified man pages.
 - **eza**: A modern replacement for ls (community fork of exa).
 - **jq**: Command-line JSON processor.
 - **nmtui**: Network connection manager and user applications.
