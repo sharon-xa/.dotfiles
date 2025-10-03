@@ -12,4 +12,5 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.fish" },
+  { import = "astrocommunity.pack.astro" },
 }
