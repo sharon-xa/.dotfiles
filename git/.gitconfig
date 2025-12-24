@@ -1,0 +1,22 @@
+[user]
+    name = sharon
+    email = ali93456@gmail.com
+
+[core]
+    editor = nvim
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[push]
+    default = simple
+
+[alias]
+    st = status
+    br = branch
+    ci = commit
+    cm = commit -m
+    lg = log --oneline --graph --decorate --all
