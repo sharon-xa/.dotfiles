@@ -31,10 +31,14 @@ for dir in "$CACHE_DIR"/*/; do
   COLORS+=("$color")
 done
 
+GAME_ID_HEADER=" Game ID"
+GAME_TITLE_HEADER=" Game Title"
+CACHE_SIZE_HEADER=" Cache Size"
+
 # Compute max widths
-max_appid=0
-max_name=0
-max_size=0
+max_appid=$((${#GAME_ID_HEADER} + 1))
+max_name=$((${#GAME_TITLE_HEADER} + 1))
+max_size=$((${#CACHE_SIZE_HEADER} + 1))
 
 for i in "${!APPIDS[@]}"; do
   ((${#APPIDS[i]} > max_appid)) && max_appid=${#APPIDS[i]}
@@ -44,8 +48,12 @@ for i in "${!APPIDS[@]}"; do
   ((${#SIZES[i]} > max_size)) && max_size=${#SIZES[i]}
 done
 
+if [ "$max_name" -gt $((${#GAME_TITLE_HEADER} + 1)) ]; then
+  ((max_name += 2))
+fi
+
 # Print header
-printf "%-${max_appid}s  %-${max_name}s  %-${max_size}s\n" "AppID" "Name" "Size"
+printf "%-${max_appid}s  %-${max_name}s  %-${max_size}s\n" "$GAME_ID_HEADER" "$GAME_TITLE_HEADER" "$CACHE_SIZE_HEADER"
 printf "%-${max_appid}s  %-${max_name}s  %-${max_size}s\n" \
   "$(printf '%*s' "$max_appid" "" | tr ' ' '-')" \
   "$(printf '%*s' "$max_name" "" | tr ' ' '-')" \
@@ -53,6 +61,6 @@ printf "%-${max_appid}s  %-${max_name}s  %-${max_size}s\n" \
 
 # Print rows
 for i in "${!APPIDS[@]}"; do
-  printf "%-${max_appid}s  %-${max_name}s  %b%-${max_size}s%b\n" \
+  printf " %-${max_appid}s  %-${max_name}s  %b%-${max_size}s%b\n" \
     "${APPIDS[i]}" "${NAMES[i]}" "${COLORS[i]}" "${SIZES[i]}" "$RESET"
 done
