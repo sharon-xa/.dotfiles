@@ -5,7 +5,7 @@ import = ["~/.config/alacritty/themes/gruber_darker.toml"]
 size = 14
 
 [font.normal]
-family = "CaskaydiaCove Nerd Font"
+family = "MonoLisa"
 style = "Regular"
 
 [font.bold]

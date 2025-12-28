@@ -19,6 +19,6 @@ require "lazy_setup"
 require "polish"
 
 vim.opt.scrolloff = 10
-vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+vim.o.guifont = "MonoLisa:h16"
 vim.g.neovide_transparency = 0.95
 vim.g.transparency = 0.9
