@@ -22,6 +22,8 @@ set -U fish_user_paths $HOME/.dotnet/tools $fish_user_paths
 # Flatpak
 set -x FLATPAK_DOWNLOAD_CONCURRENCY 5
 
+set -gx EDITOR vim
+
 # Aliases
 # ---------------------------------
 alias coverage "go test -coverprofile=coverage.out && go tool cover -html=coverage.out"
