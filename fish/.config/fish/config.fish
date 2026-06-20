@@ -16,6 +16,8 @@ set -x BUN_INSTALL "$HOME/.bun"
 set -U fish_user_paths $HOME/go/bin $fish_user_paths
 set -x GOPATH "$HOME/go"
 
+set -U fish_user_paths /usr/lib/qt6/bin $fish_user_paths
+
 # .NET
 set -U fish_user_paths $HOME/.dotnet/tools $fish_user_paths
 
@@ -55,3 +57,5 @@ alias restart-plasma="systemctl --user restart plasma-plasmashell"
 bind \cf run_zi
 
 zoxide init fish | source
+
+fnm env --use-on-cd --shell fish | source
